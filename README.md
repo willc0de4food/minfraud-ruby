@@ -3,6 +3,7 @@
 Compatible with version minFraud API v1.3  
 [minFraud API documentation](http://dev.maxmind.com/minfraud/)  
 [minFraud](http://www.maxmind.com/en/ccv_overview)
+
 Modified so the only required values are a license key and an IP address.
 Also exposed more of the response attributes in the object.
 
@@ -40,7 +41,7 @@ end
 
 transaction.risk_score
 # => 3.48
-```
+
 Other attributes available in the transaction are as follows:
 transaction.distance
 # => 0
@@ -66,6 +67,7 @@ transaction.ip_region_name
 # => Arizona
 transaction.ip_country_name
 # => United States
+```
 
 ### Exception handling
 
