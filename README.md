@@ -48,23 +48,23 @@ transaction.distance
 transaction.country_code
 # => US
 transaction.ip_region
-# => AZ
+# => VA
 transaction.ip_city
-# => Phoenix
+# => Richmond
 transaction.ip_latitude
-# => 33.5222
+# => 37.5409
 transaction.ip_longitude
-# => -112.084
+# => -77.4801
 transaction.high_risk_country
 # => No
 transaction.ip_postal_code
-# => 85008
+# => 23284
 transaction.ip_accuracy_radius
 # => 16
 transaction.ip_area_code
-# => 602
+# => 804
 transaction.ip_region_name
-# => Arizona
+# => Virginia
 transaction.ip_country_name
 # => United States
 ```
