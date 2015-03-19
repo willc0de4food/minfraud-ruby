@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.2 (2015-03-18)
+ - Updated required attributes to only require IP address
+ - Added more attributes to be exposed in the transaction object
+
 ## 0.1.1 (2014-04-25)
 
 - Change Minfraud::ResponseError to inherit from StandardError rather than ArgumentError (8952b46)
