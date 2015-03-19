@@ -31,7 +31,7 @@ end
 transaction = Minfraud::Transaction.new do |t|
   # Required fields
   t.ip = '1.2.3.4'
-  # Other fields listed later in documentation are optional
+  # Other fields listed are optional, but will provide a more accurate risk score
   t.city = 'richmond'
   t.state = 'virginia'
   t.postal = '12345'
