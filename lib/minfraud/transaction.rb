@@ -7,10 +7,10 @@ module Minfraud
   class Transaction
 
     # Required attribute
-    attr_accessor :ip, :city, :state, :postal, :country
+    attr_accessor :ip
 
     # Shipping address attribute (optional)
-    attr_accessor :ship_addr, :ship_city, :ship_state, :ship_postal, :ship_country
+    attr_accessor :city, :state, :postal, :country, :ship_addr, :ship_city, :ship_state, :ship_postal, :ship_country
 
     # User attribute (optional)
     attr_accessor :email, :phone
@@ -44,6 +44,24 @@ module Minfraud
     # @return [Float] 0.01 - 100.0
     def risk_score
       results.risk_score
+    end
+
+    # Making the city available in the object
+    def city
+      city = ""
+      city = results.city if results.city.present?
+      city = results.ip_region_name if city.blank? && results.ip_region_name.present?
+      city
+    end
+
+    # Making the state available in the object
+    def state
+      results.state
+    end
+
+    # Making country available in the object
+    def country
+      results.country
     end
 
     # Hash of attributes that have been set
