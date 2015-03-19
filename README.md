@@ -27,8 +27,8 @@ end
 ```ruby
 transaction = Minfraud::Transaction.new do |t|
   # Required fields
-  # Other fields listed later in documentation are optional
   t.ip = '1.2.3.4'
+  # Other fields listed later in documentation are optional
   t.city = 'richmond'
   t.state = 'virginia'
   t.postal = '12345'
@@ -62,15 +62,15 @@ class ResponseError < StandardError; end
 | name          | type (length)         | example                             | description |
 | ------------- | --------------------- | ----------------------------------- | ----------- |
 | ip            | string                | `t.ip = '1.2.3.4'`                  | Customer IP address |
-| city          | string                | `t.city = 'new york'`               | Customer city |
-| state         | string                | `t.state = 'new york'`              | Customer state/province/region |
-| postal        | string                | `t.postal = '10014'`                | Customer zip/postal code |
-| country       | string                | `t.country = 'US'`                  | Customer ISO 3166-1 country code |
 
 #### Optional
 
 | name               | type (length)      | description |
 | ------------------ | ------------------ | ----------- |
+| city          | string                | `t.city = 'new york'`               | Customer city |
+| state         | string                | `t.state = 'new york'`              | Customer state/province/region |
+| postal        | string                | `t.postal = '10014'`                | Customer zip/postal code |
+| country       | string                | `t.country = 'US'`                  | Customer ISO 3166-1 country code |
 | ship_addr          | string             | |
 | ship_city          | string             | |
 | ship_state         | string             | |

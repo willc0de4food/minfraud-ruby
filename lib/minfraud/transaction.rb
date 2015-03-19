@@ -46,22 +46,52 @@ module Minfraud
       results.risk_score
     end
 
-    # Making the city available in the object
-    def city
-      city = ""
-      city = results.city if results.city.present?
-      city = results.ip_region_name if city.blank? && results.ip_region_name.present?
-      city
+    def distance
+      results.distance
     end
 
-    # Making the state available in the object
-    def state
-      results.state
+    def country_code
+      results.country_code
     end
 
-    # Making country available in the object
-    def country
-      results.country
+    def ip_region
+      results.ip_region
+    end
+
+    def ip_city
+      results.ip_city
+    end
+
+    def ip_latitude
+      results.ip_latitude
+    end
+
+    def ip_longitude
+      results.ip_longitude
+    end
+
+    def high_risk_country
+      results.high_risk_country
+    end
+
+    def ip_postal_code
+      results.ip_postal_code
+    end
+
+    def ip_accuracy_radius
+      results.ip_accuracy_radius
+    end
+
+    def ip_area_code
+      results.ip_area_code
+    end
+
+    def ip_region_name
+      results.ip_region_name
+    end
+
+    def ip_country_name
+      results.ip_country_name
     end
 
     # Hash of attributes that have been set
@@ -101,7 +131,7 @@ module Minfraud
     def validate_string(attr_name)
       attribute = self.send(attr_name)
       unless attribute.instance_of?(String)
-        raise TransactionError, "Transaction.#{attr_name} must me a string"
+        raise TransactionError, "Transaction.#{attr_name} must be a string"
       end
     end
 
