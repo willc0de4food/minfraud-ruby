@@ -67,6 +67,10 @@ transaction.ip_region_name
 # => Virginia
 transaction.ip_country_name
 # => United States
+transaction.anonymous_proxy
+# => No
+transaction.corporate_proxy
+# => No
 ```
 
 ### Exception handling

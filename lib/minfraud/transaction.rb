@@ -94,6 +94,14 @@ module Minfraud
       results.ip_country_name
     end
 
+    def anonymous_proxy
+      results.anonymous_proxy
+    end
+
+    def corporate_proxy
+      results.ip_corporate_proxy
+    end
+
     # Hash of attributes that have been set
     # @return [Hash] present attributes
     def attributes
