@@ -7,7 +7,6 @@ Compatible with version minFraud API v1.3
 Modified so the only required values are a license key and an IP address.
 Also exposed more of the response attributes in the object.
 
-[![Build Status](https://travis-ci.org/willc0de4food/minfraud-ruby.svg?branch=master)](https://travis-ci.org/willc0de4food/minfraud-ruby)
 [![Code Climate](https://codeclimate.com/github/willc0de4food/minfraud-ruby.png)](https://codeclimate.com/github/willc0de4food/minfraud-ruby)
 
 [Rubydoc documentation](http://www.rubydoc.info/github/willc0de4food/minfraud-ruby/master)
